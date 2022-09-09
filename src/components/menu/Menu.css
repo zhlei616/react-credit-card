@@ -1,11 +1,11 @@
 .menu {
-    background-color: #ffffff;
-    width: 220px;
-    height: 100vh;
     top: 0;
     left: -100%;
     position: fixed;
     transition: 800ms;
+    background-color: #ffffff;
+    width: 220px;
+    height: 100vh;
     border-color: black;
     border: 2px;
     border-style: none solid none none;
@@ -14,4 +14,9 @@
 .menu.open {
     left: 0;
     transition: 500ms;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
 }

@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import CardRegistryForm from './pages/card-registry-form/CardRegistryForm';
-import Menu from './components/menu/Menu';
 import reportWebVitals from './reportWebVitals';
+import App from './App'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Menu/>
-    <CardRegistryForm FirstName="Larry"/>
+    <App/>
   </React.StrictMode>
 );
 

@@ -1,7 +1,8 @@
 import './CardRegistryForm.css';
 import CreditCard from '../../components/credit-card/CreditCard';
+import { UserProps } from '../../models/UserProps'
 
-function CardRegistryForm (props: { FirstName:string }) {
+function CardRegistryForm (props: UserProps) {
     return (
         <div>
             <h1>Register card form</h1>

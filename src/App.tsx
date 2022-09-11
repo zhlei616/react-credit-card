@@ -1,18 +1,18 @@
 import './App.css';
-import CardRegistryForm from './pages/card-registry-form/CardRegistryForm';
+import CardRegisterForm from './pages/card-register-form/CardRegisterForm';
 import Menu from './components/menu/Menu';
 import { UserProps } from './models/UserProps';
 
 function App() {
-  const user : UserProps = {
+  const currentUser : UserProps = {
     FirstName: "Larry",
     LastName: "Zhang"
   };
 
   return (
-    <div>
+    <div className='app'>
       <Menu/>
-      <CardRegistryForm {...user}/>
+      <CardRegisterForm {...currentUser}/>
     </div>
   );
 }

@@ -8,12 +8,16 @@ function Menu() {
   const slideMenu = () => setMenuState(!isMenuOpen);
 
   return (
-    <div>
-        <div>
+    <div className="menuContainer">
+        <div className="menuIcon">
           <img className="icon" src={menu} alt="Menu" onClick={slideMenu}/>
         </div>
         <div className={isMenuOpen ? 'menu open' : 'menu'}>
-          <img className="icon" src={back} alt="Back" onClick={slideMenu}/>
+          <div className="menuTitleBar">
+            <img className="icon" src={back} alt="Back" onClick={slideMenu}/>
+            <h2 className="menuTitle">Menu</h2>
+            {/* <div>Menu</div> */}
+          </div>
           <hr/>
           <div>This is menu content</div>
         </div>

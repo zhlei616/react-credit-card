@@ -1,0 +1,28 @@
+.creditCard{
+    margin-bottom: 10px;
+}
+
+.cardNumber{
+    font-size: x-large;
+    width: 100%;
+    min-width: 13em;
+}
+
+.cardInfo{
+    display: grid;
+    padding: 5px;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    justify-content: right;
+}
+
+.cvc{
+    font-size: large;
+    width: 5em;
+    text-align: center;
+}
+
+.react-datepicker__input-container > input{
+    width: 5em;
+    text-align: center;
+}

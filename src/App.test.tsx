@@ -2,8 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders header', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/Register card form/i);
+test('renders app', () => {
+  //Act
+  const {container} = render(<App />);
+
+  //Assert
+  const headerElement = container.getElementsByClassName("App");
   expect(headerElement).toBeInTheDocument();
 });

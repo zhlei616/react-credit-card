@@ -2,7 +2,7 @@ import './CreditCard.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import {useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useAppDispatch } from '../../hooks';
 import { updateCardNumber, updateCvc, updateExpiry } from '../../reducers/creditCardReducer';
 import moment from 'moment';
 
@@ -11,7 +11,7 @@ function convertDateToLastDayOfMonth(date:Date){
 }
 
 function CreditCard () {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const nonNumberRegex = /\D/g;
     //Card number
     const [cardNumber, setCardNumber] = useState('');

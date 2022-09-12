@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { CreditCardProps } from '../models/CreditCardProps';
 
 const initialState: CreditCardProps = {
@@ -11,13 +11,13 @@ export const creditCardSlice = createSlice({
     name: 'creditCard',
     initialState,
     reducers: {
-      updateCardNumber: (state, action) => {
+      updateCardNumber: (state, action: PayloadAction<string>) => {
         state.CardNumber = action.payload
       },
-      updateCvc: (state, action) => {
+      updateCvc: (state, action: PayloadAction<string>) => {
         state.Cvc = action.payload
       },
-      updateExpiry: (state, action) => {
+      updateExpiry: (state, action: PayloadAction<string>) => {
         state.Expiry = action.payload
       },
     },

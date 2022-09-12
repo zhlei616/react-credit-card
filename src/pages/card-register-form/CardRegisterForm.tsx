@@ -1,12 +1,10 @@
 import CreditCard from '../../components/credit-card/CreditCard';
 import { UserProps } from '../../models/UserProps'
 import './CardRegisterForm.css';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store';
+import { useAppSelector } from '../../hooks';
 
 function CardRegisterForm (props: UserProps) {
-    const rootState = useSelector((state:RootState) => state);
-    const creditCard = rootState.creditCard;
+    const creditCard = useAppSelector((state) => state).creditCard;
     const isSubmitEnabled = () => {
         return (creditCard.CardNumber && creditCard.Cvc && creditCard.Expiry);
     };

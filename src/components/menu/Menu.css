@@ -1,0 +1,40 @@
+.menuContainer{
+    z-index: 1;
+}
+.menu {
+    top: 0;
+    left: -100%;
+    position: fixed;
+    transition: 800ms;
+    background-color: #ffffff;
+    width: 220px;
+    height: 100vh;
+    border-color: black;
+    border: 2px;
+    border-style: none solid none none;
+    padding: 5px;
+}
+
+.menu.open {
+    left: 0;
+    transition: 500ms;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.menuIcon{
+    position: absolute;
+}
+
+.menuTitleBar{
+    display: flex;
+}
+
+.menuTitle{
+    margin: 0 20%;
+}
